@@ -19,7 +19,6 @@ function App() {
 		const delayDebounceFn = setTimeout(() => {
 			if (searchQuery)
 				getCharacters(searchQuery).then((result)=>{
-					console.log(result);
 					setCharacterList(result?.data?.results);
 				});
 		}, 500)
